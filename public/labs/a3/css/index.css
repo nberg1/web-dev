@@ -112,6 +112,9 @@ p#id-selector-2 {
     height: 75px;
 }
 
+.min-height-150 {
+    height: 150px;
+}
 .pos-relative-nudge-up-right {
     position: relative;
     bottom: 30px;
