@@ -4,16 +4,16 @@ body {
     margin-right: 10px;
 }
 
-.navigation {
+.wd-navigation {
     color: grey;
     border-color: rgb(47, 51, 54);
     border-style: solid;
     color: rgb(110, 118, 125);
 
 }
-.rounded-edges {
+.wd-rounded-edges {
     background-color: #2c2b2b;
-    color: white;
+    color: rgb(110, 118, 125);
     border-radius: 50px;
     border-style: solid;
     border-color: #2c2b2b;
@@ -22,6 +22,7 @@ body {
 .wd-search-content {
     margin-top: 10px;
     overflow: hidden;
+    position: relative;
 }
 
 .wd-search-field {
@@ -33,15 +34,15 @@ body {
     padding-right: 35px;
 }
 
-.float-left {
+.wd-float-left {
     float: left;
 }
 
-.float-right {
+.wd-float-right {
     float: right;
 }
 
-.flex-container {
+.wd-flex-container {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -49,7 +50,7 @@ body {
     flex-basis: 100%;
 }
 
-.flex-container .wd-nav-box {
+.wd-flex-container .wd-nav-box {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -84,11 +85,6 @@ body {
     width: 100%;
     color: rgb(110, 118, 125);
     opacity: 50%;
-}
-
-.icon {
-    padding: 10px;
-    min-width:40px;
 }
 
 .wd-gear-icon {
@@ -178,8 +174,11 @@ body {
 
 .wd-gear-emoji {
     padding-right: 10px;
-    background-color: black;
-    color: black;
-    width: 25px;
-    height: 25px;
+    color: rgb(29, 161, 242);
+    font-size: 30px;
+    text-decoration-line: none;
+}
+
+.wd-anchor-underline {
+    text-decoration-line: none;
 }
