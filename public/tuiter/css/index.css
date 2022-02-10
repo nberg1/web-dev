@@ -69,6 +69,7 @@ body {
     height: 30px;
     padding-left: 35px;
     padding-right: 35px;
+    min-width: 56px;
 }
 
 .wd-float-left {
@@ -193,6 +194,7 @@ body {
     color: rgb(29, 161, 242);
     font-size: 30px;
     text-decoration-line: none;
+    justify-content: center;
 }
 
 .wd-anchor-underline {
