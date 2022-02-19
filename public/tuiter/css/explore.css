@@ -85,7 +85,7 @@
 
 .wd-gear-emoji {
     padding-right: 10px;
-    color: rgb(29, 161, 242);
+    color: white;
     font-size: 30px;
     text-decoration-line: none;
     justify-content: center;
@@ -95,3 +95,33 @@
     text-decoration-line: none;
 }
 
+.list-group-item {
+    background: black;
+    color: white;
+}
+
+.list-group-item > a:active {
+    font-weight: bold;
+}
+
+.wd-avatar-image-round {
+    width: 48px;
+    height: 48px;
+    vertical-align: -200%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+}
+
+.wd-flex-container-avatar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: stretch;
+}
+
+@media only screen and (max-width: 991px) {
+    .wd-nav-text {
+        display: none;
+    }
+}
