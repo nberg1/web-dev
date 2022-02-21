@@ -57,25 +57,25 @@
                 </nav>
             </div>
         </div>
-        <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-7 col-sm-7 col-10 p-0">
-            <div class="container-fluid border-1 p-0">
+        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-10 p-0">
+            <div class=" container-fluid border-1 p-0">
                 <div class="wd-overflow-hidden wd-border-style">
-                    <form>
-                        <div class="mt-4 wd-overflow-hidden">
-                            <input class="wd-search-field wd-rounded-edges wd-font" placeholder="Search Tuiter"/>
-                            <i class="fa fa-magnifying-glass"></i>
-                            <div class="wd-float-right wd-gear-emoji">
-                                <a class="wd-anchor-underline" href="explore-settings.html">
-                                    <span class="wd-gear-emoji">&#9881;</span>
-                                </a>
+                    <div class="position-relative">
+                        <form>
+                            <div class="mt-4 wd-overflow-hidden">
+                                <i class="fa fa-search position-absolute" style="color: white"></i>
+                                <input class="wd-search-field wd-rounded-edges wd-font" width="100%" placeholder="Search Tuiter"/>
+                                <div class="wd-float-right wd-gear-emoji">
+                                    <a class="wd-anchor-underline" href="explore-settings.html">
+                                        <span class="wd-gear-emoji">&#9881;</span>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                    <ul class="nav nav-fill">
+                        </form>
+                    </div>
+                    <ul class="nav nav-tabs text-dark nav-fill" style="border-bottom-color: black">
                         <li class="nav-item">
-                            <a class="nav-link active bg-dark text-white" href="for-you.html">For you</a>
-                            <!--                            <div class="wd-nav-section-underline"></div>-->
-
+                            <a class="nav-link active bg-black text-white" href="for-you.html">For you</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="trending.html">Trending</a>
@@ -93,7 +93,6 @@
                             <a class="nav-link text-white" href="entertainment.html">Entertainment</a>
                         </li>
                     </ul>
-
                 </div>
                 <div>
                     <div class="wd-border-style">
@@ -111,7 +110,7 @@
                                 <span> - 2h</span>
                                 <div class="text-white fw-bold">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</div>
                             </div>
-                            <div class="float-end">
+                            <div class="ms-auto">
                                 <img class="rounded-3 justify-content-center" width="100px" heigh="100px" src="images/ReactJS.png">
                             </div>
                         </div>
@@ -123,7 +122,7 @@
                                 <div class="text-white fw-bold">JavaScript is a programming language that can run on browsers as well as desktops</div>
                                 <div>123K Tuits</div>
                             </div>
-                            <div class="float-end">
+                            <div class="ms-auto">
                                 <img class="rounded-3" width="100px" heigh="100px" src="images/JavaScript.png">
                             </div>
                         </div>
@@ -133,7 +132,7 @@
                                 <span class="text-white fw-bold">jQuery</span>
                                 <div>123K Tuits</div>
                             </div>
-                            <div class="float-end">
+                            <div class="ms-auto">
                                 <img class="rounded-3" width="100px" heigh="100px" src="images/jquery_logo.png">
                             </div>
                         </div>
@@ -144,7 +143,7 @@
                                 <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png">
                                 <div>123K Tuits</div>
                             </div>
-                            <div class="float-end">
+                            <div class="ms-auto">
                                 <img class="rounded-3" width="100px" heigh="100px" src="images/NodeJS_logo.png">
                             </div>
                         </div>
@@ -152,7 +151,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xxl-4 col-xl-4 col-lg-4">
+        <div class="col-xxl-3 col-xl-3 col-lg-3">
             <div class="container-fluid border border-dark rounded p-3 bg-dark d-none d-lg-block">
                 <div class="mb-4 text-white">
                     <div style="font-weight: bold">Who to follow</div>
@@ -161,13 +160,14 @@
                     <div>
                         <img class="rounded-circle me-3" width="48px" height="48px" src="images/java_logo.png">
                     </div>
-                    <div>
-                        <span class="text-white">Java</span>
-                        <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png"></br>
+                    <div class="float-start">
+                        <span class="text-white wd-white-space">Java
+                            <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png">
+                        </span></br>
                         <span class="wd-font-color-gray">@Java</span>
                     </div>
-                    <div>
-                        <button class="justify-content-end rounded-pill border-1 ps-3 pe-3">Follow</button>
+                    <div class="ms-auto">
+                        <button type="button" class="float-end rounded-pill ps-3 pe-3">Follow</button>
                     </div>
                 </div>
                 <div class="d-flex flex-row mb-4">
@@ -175,12 +175,13 @@
                         <img class="rounded-circle me-3" width="48px" height="48px" src="images/relativity_space_logo.jfif">
                     </div>
                     <div>
-                        <span class="text-white">Relativity Space</span>
-                        <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png"></br>
+                        <span class="text-white wd-white-space">Relativity Space
+                            <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png">
+                        </span></br>
                         <span class="wd-font-color-gray">@relativityspace</span>
                     </div>
-                    <div>
-                        <button class="rounded-pill border-1 ps-3 pe-3">Follow</button>
+                    <div class="ms-auto">
+                        <button type="button" class="float-end rounded-pill ps-3 pe-3 ">Follow</button>
                     </div>
                 </div>
                 <div class="d-flex flex-row mb-4">
@@ -188,12 +189,13 @@
                         <img class="rounded-circle me-3" width="48px" height="48px" src="images/virgin_logo.png">
                     </div>
                     <div>
-                        <span class="text-white">Virgin Galactic</span>
-                        <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png"></br>
+                        <span class="text-white wd-white-space">Virgin Galactic
+                            <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png">
+                        </span></br>
                         <span class="wd-font-color-gray">@virgingalactic</span>
                     </div>
-                    <div>
-                        <button class="rounded-pill border-1 ps-3 pe-3">Follow</button>
+                    <div class="ms-auto">
+                        <button type="button" class="float-end rounded-pill ps-3 pe-3">Follow</button>
                     </div>
                 </div>
                 <div class="d-flex flex-row mb-4">
@@ -201,25 +203,27 @@
                         <img class="rounded-circle me-3" width="48px" height="48px" src="images/nasa_logo.png">
                     </div>
                     <div>
-                        <span class="text-white">Nasa</span>
-                        <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png"></br>
+                        <span class="text-white wd-white-space">Nasa
+                            <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png">
+                        </span></br>
                         <span class="wd-font-color-gray">@NASA</span>
                     </div>
-                    <div>
-                        <button class="rounded-pill border-1 ps-3 pe-3">Follow</button>
+                    <div class="ms-auto">
+                        <button type="button" class="float-end rounded-pill ps-3 pe-3">Follow</button>
                     </div>
                 </div>
-                <div class="d-inline-flex flex-row mb-4">
+                <div class="d-flex flex-row">
                     <div>
                         <img class="rounded-circle me-3" width="48px" height="48px" src="images/tesla_logo.png">
                     </div>
                     <div>
-                        <span class="text-white">Tesla</span>
-                        <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png"></br>
+                        <span class="text-white wd-white-space">Tesla
+                            <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png">
+                        </span></br>
                         <span class="wd-font-color-gray">@Tesla</span>
                     </div>
-                    <div>
-                        <button class="rounded-pill border-1 ps-3 pe-3">Follow</button>
+                    <div class="ms-auto align-content-center">
+                        <button type="button" class="float-end rounded-pill ps-3 pe-3">Follow</button>
                     </div>
                 </div>
             </div>

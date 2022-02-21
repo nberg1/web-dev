@@ -120,8 +120,18 @@
     align-items: stretch;
 }
 
-@media only screen and (max-width: 991px) {
-    .wd-nav-text {
-        display: none;
-    }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    border-bottom: 3px solid rgb(29, 161, 242);
+}
+
+.wd-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wd-white-space {
+    white-space: nowrap;
 }
