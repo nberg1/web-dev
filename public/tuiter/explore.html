@@ -9,97 +9,97 @@
 
 </head>
 <body class="bg-black wd-font">
-<div class="container-fluid mt-2">
+<div class="container-fluid m-2">
     <div class="row mt-1">
-        <div class="col-xxl-2 col-xl-2 col-lg-auto col-md-auto col-sm-auto col-auto">
-            <div class="container me-0 bg-black" style="max-width: 200px">
-                <nav class="nav nav-pills flex-column bg-black">
+        <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-auto col-sm-auto col-auto me-1 ms-lg-4">
+            <div class="container me-3 bg-black p-0">
+                <nav class="nav nav-pills flex-column bg-black position-relative">
                     <a class="nav-link mb-2" href="#">
-                        <i class="fab fa-twitter me-1 p-2" style="color: white"></i>
+                        <i class="fab fa-twitter me-1 p-2 text-white"></i>
                     </a>
                     <a class="nav-link mb-2 text-white d-inline-flex flex-row align-items-center" href="home.html">
-                        <i class="fa fa-home fa-1x me-1 p-2" style="color: white"></i>
+                        <i class="fa fa-home fa-1x me-1 p-2 text-white"></i>
                         <span class="d-none d-xl-block">Home</span>
                     </a>
-                    <a class="nav-link mb-2 active text-white d-inline-flex flex-row align-items-center" href="explore.html">
-                        <i class="fa fa-hashtag fa-1x me-2 p-2" style="color: white"></i>
-                        <span class="d-none d-xl-block">Explore</span>
+                    <a class="nav-link mb-2 text-white d-inline-flex flex-row align-items-center" href="explore.html">
+                        <i class="fa fa-hashtag fa-1x me-2 p-2 text-white" style="-webkit-text-stroke: 1px white;"></i>
+                        <span class="d-none d-xl-block fw-bold">Explore</span>
                     </a>
                     <a class="nav-link mb-2 text-white d-inline-flex flex-row align-items-center" href="notifications.html">
-                        <i class="fa fa-bell fa-1x me-2 p-2" style="color: white"></i>
+                        <i class="fa fa-bell fa-1x me-2 p-2 text-white"></i>
                         <span class="d-none d-xl-block">Notifications</span>
                     </a>
                     <a class="nav-link mb-2 text-white d-inline-flex flex-row align-items-center" href="messages.html">
-                        <i class="fa fa-envelope fa-1x me-2 p-2" style="color: white"></i>
+                        <i class="fa fa-envelope fa-1x me-2 p-2 text-white"></i>
                         <span class="d-none d-xl-block">Messages</span>
                     </a>
                     <a class="nav-link mb-2 text-white d-inline-flex flex-row align-items-center" href="bookmarks.html">
-                        <i class="fa fa-bookmark fa-1x me-2 p-2" style="color: white"></i>
+                        <i class="fa fa-bookmark fa-1x me-2 p-2 text-white"></i>
                         <span class="d-none d-xl-block">Bookmarks</span>
                     </a>
                     <a class="nav-link mb-2 text-white d-inline-flex flex-row align-items-center" href="lists.html">
-                        <i class="fa fa-list fa-1x me-2 p-2" style="color: white"></i>
+                        <i class="fa fa-list fa-1x me-2 p-2 text-white"></i>
                         <span class="d-none d-xl-block">Lists</span>
                     </a>
                     <a class="nav-link mb-2 text-white d-inline-flex flex-row align-items-center" href="profile.html">
-                        <i class="fa fa-user fa-1x me-2 p-2" style="color: white"></i>
+                        <i class="fa fa-user fa-1x me-2 p-2 text-white"></i>
                         <span class="d-none d-xl-block">Profile</span>
                     </a>
                     <a class="nav-link mb-2 text-white d-inline-flex flex-row align-items-center ps-lg-2" href="more.html">
-                        <span class="fa-stack fa-1x">
-                            <i class="fas fa-circle fa-stack-1x" style="color: white"></i>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-1x ms-md-0 text-white" width="100%" style="font-size:25px"></i>
                             <i class="fas fa-ellipsis-h fa-stack-1x" style="color: black"></i>
                         </span>
                         <span class="d-none d-xl-block">More</span>
                     </a>
-                    <button type="button" class="rounded-pill btn-primary btn-block text-white p-2">Tuit</button>
+                    <button type="button" class="wd-tuit-button rounded-pill btn-primary btn-block text-white p-2">Tuit</button>
                 </nav>
             </div>
         </div>
-        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-10 p-0">
+        <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-8 col-sm-8 col-10 p-0 me-2 ms-lg-2">
             <div class=" container-fluid border-1 p-0">
                 <div class="wd-overflow-hidden wd-border-style">
-                    <div class="position-relative">
+                    <div>
                         <form>
-                            <div class="mt-4 wd-overflow-hidden">
-                                <i class="fa fa-search position-absolute" style="color: white"></i>
-                                <input class="wd-search-field wd-rounded-edges wd-font" width="100%" placeholder="Search Tuiter"/>
-                                <div class="wd-float-right wd-gear-emoji">
+                            <div class="mt-2 wd-overflow-hidden align-items-center d-flex">
+                                <span class="wd-search-box wd-flex-grow" style="min-width: 56px;">
+                                    <i class="fa fa-search"></i>
+                                    <input type="text" class="wd-search-field wd-rounded-edges wd-font" width="100%" placeholder="Search Tuiter"/>
+                                </span>
+                                <span class="wd-float-right wd-gear-emoji justify-content-center">
                                     <a class="wd-anchor-underline" href="explore-settings.html">
-                                        <span class="wd-gear-emoji">&#9881;</span>
+                                        <i class="fa fa-cog" style="color: white"></i>
                                     </a>
-                                </div>
+                                </span>
                             </div>
                         </form>
                     </div>
                     <ul class="nav nav-tabs text-dark nav-fill" style="border-bottom-color: black">
                         <li class="nav-item">
-                            <a class="nav-link active bg-black text-white" href="for-you.html">For you</a>
+                            <a class="nav-link active bg-black text-white fw-bold wd-font" href="for-you.html">For you</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="trending.html">Trending</a>
+                            <a class="nav-link wd-gray wd-font" href="trending.html">Trending</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">COVID-19</a>
+                            <a class="nav-link wd-gray wd-font" href="covid-19.html">COVID-19</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="news.html">News</a>
+                            <a class="nav-link wd-gray wd-font" href="news.html">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="sports.html">Sports</a>
+                            <a class="nav-link wd-gray wd-font d-none d-md-block" href="sports.html">Sports</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="entertainment.html">Entertainment</a>
+                            <a class="nav-link wd-gray d-none d-lg-block" href="entertainment.html">Entertainment</a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <div class="wd-border-style">
-                        <div class="pt-2 pb-2">
-                            <span class="text-white">
-                                SpaceX'S Starship
-                                <img width="100%" heigh="500px" src="images/SpaceX_Starship.jpg">
-                            </span>
+                        <div class="container position-relative ps-0 pe-0">
+                            <img width="100%" heigh="500px" src="images/SpaceX_Starship.jpg">
+                            <div class="wd-bottom-left text-white">SpaceX's Starship</div>
                         </div>
                         <div class="overflow-hidden d-flex wd-font-color-gray p-3">
                             <div class="float-start">
@@ -150,79 +150,89 @@
                 </div>
             </div>
         </div>
-        <div class="col-xxl-3 col-xl-3 col-lg-3">
-            <div class="container-fluid border border-dark rounded p-3 bg-dark d-none d-lg-block">
+        <div class="col-xxl-3 col-xl-3 col-lg-3 p-0 ms-2">
+            <div class="container border border-dark rounded bg-dark d-none d-lg-block p-3">
                 <div class="mb-4 text-white">
                     <div style="font-weight: bold">Who to follow</div>
                 </div>
                 <div class="d-flex flex-row mb-4">
                     <div>
-                        <img class="rounded-circle me-3" width="48px" height="48px" src="images/java_logo.png">
+                        <img class="rounded-circle me-xxl-3 me-xl-2 me-lg-0" width="48px" height="48px" src="images/java_logo.png">
                     </div>
-                    <div class="float-start">
+                    <div class="overflow-visible">
+                        <div class="position-absolute">
                         <span class="text-white wd-white-space">Java
                             <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png">
                         </span></br>
-                        <span class="wd-font-color-gray">@Java</span>
+                            <span class="wd-font-color-gray">@Java</span>
+                        </div>
                     </div>
                     <div class="ms-auto">
-                        <button type="button" class="float-end rounded-pill ps-3 pe-3">Follow</button>
+                        <button type="button" class="float-end rounded-pill p-2 ps-3 pe-3">Follow</button>
                     </div>
                 </div>
                 <div class="d-flex flex-row mb-4">
                     <div>
-                        <img class="rounded-circle me-3" width="48px" height="48px" src="images/relativity_space_logo.jfif">
+                        <img class="rounded-circle me-xxl-3 me-xl-2 me-lg-0" width="48px" height="48px" src="images/relativity_space_logo.jfif">
                     </div>
-                    <div>
+                    <div class="overflow-visible">
+                        <div class="position-absolute">
                         <span class="text-white wd-white-space">Relativity Space
                             <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png">
                         </span></br>
-                        <span class="wd-font-color-gray">@relativityspace</span>
+                            <span class="wd-font-color-gray">@relativityspace</span>
+                        </div>
                     </div>
                     <div class="ms-auto">
-                        <button type="button" class="float-end rounded-pill ps-3 pe-3 ">Follow</button>
+                        <button type="button" class="float-end rounded-pill p-2 ps-3 pe-3">Follow</button>
                     </div>
                 </div>
                 <div class="d-flex flex-row mb-4">
                     <div>
-                        <img class="rounded-circle me-3" width="48px" height="48px" src="images/virgin_logo.png">
+                        <img class="rounded-circle me-xxl-3 me-xl-2 me-lg-0" width="48px" height="48px" src="images/virgin_logo.png">
                     </div>
-                    <div>
+                    <div class="overflow-visible">
+                        <div style="position: absolute">
                         <span class="text-white wd-white-space">Virgin Galactic
                             <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png">
                         </span></br>
-                        <span class="wd-font-color-gray">@virgingalactic</span>
+                            <span class="wd-font-color-gray">@virgingalactic</span>
+                        </div>
                     </div>
-                    <div class="ms-auto">
-                        <button type="button" class="float-end rounded-pill ps-3 pe-3">Follow</button>
+                    <div class="wd-follow-button ms-auto">
+                        <button type="button" class="float-end rounded-pill p-2 ps-3 pe-3">Follow</button>
                     </div>
                 </div>
                 <div class="d-flex flex-row mb-4">
                     <div>
-                        <img class="rounded-circle me-3" width="48px" height="48px" src="images/nasa_logo.png">
+                        <img class="rounded-circle me-xxl-3 me-xl-2 me-lg-0" width="48px" height="48px" src="images/nasa_logo.png">
                     </div>
-                    <div>
+                    <div class="overflow-visible">
+                        <div class="position-absolute">
                         <span class="text-white wd-white-space">Nasa
                             <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png">
                         </span></br>
-                        <span class="wd-font-color-gray">@NASA</span>
+                            <span class="wd-font-color-gray">@NASA</span>
+                        </div>
                     </div>
                     <div class="ms-auto">
-                        <button type="button" class="float-end rounded-pill ps-3 pe-3">Follow</button>
+                        <button type="button" class="float-end rounded-pill p-2 ps-3 pe-3">Follow</button>
                     </div>
                 </div>
                 <div class="d-flex flex-row">
                     <div>
-                        <img class="rounded-circle me-3" width="48px" height="48px" src="images/tesla_logo.png">
+                        <img class="rounded-circle me-xxl-3 me-xl-2 me-lg-0" width="48px" height="48px" src="images/tesla_logo.png">
                     </div>
-                    <div>
+                    <div class="overflow-visible">
+                        <div class="position-absolute">
                         <span class="text-white wd-white-space">Tesla
                             <img class="wd-tuit-emoji" src="images/Twitter_Verified_Badge.svg.png">
                         </span></br>
-                        <span class="wd-font-color-gray">@Tesla</span>
+                            <span class="wd-font-color-gray">@Tesla</span>
+                        </div>
                     </div>
-                    <div class="ms-auto align-content-center">
-                        <button type="button" class="float-end rounded-pill ps-3 pe-3">Follow</button>
+                    <div class="ms-auto">
+                        <button type="button" class="float-end rounded-pill p-2 ps-3 pe-3">Follow</button>
                     </div>
                 </div>
             </div>
