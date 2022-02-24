@@ -119,3 +119,7 @@
 .wd-flex-grow {
     flex-grow: 1;
 }
+
+.wd-who-to-follow-bg {
+    background-color: rgb(35, 35, 35);
+}
