@@ -13,7 +13,7 @@ const WhoToFollowListItem = (who) => {
                 </div>
             </div>
             <div class="ms-auto">
-                <button type="button" class="float-end rounded-pill p-2 ps-3 pe-3">Follow</button>
+                <button type="button" class="wd-tuit-button text-white float-end rounded-pill p-2 ps-3 pe-3">Follow</button>
             </div>
         </div>
     `);

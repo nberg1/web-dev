@@ -8,9 +8,9 @@ const NavigationSidebar = () => {
                     <i class="fa fa-home fa-1x me-1 p-2 text-white"></i>
                     <span class="d-none d-xl-block">Home</span>
                 </a>
-                <a class="nav-link mb-2 text-white d-inline-flex flex-row align-items-center" href="explore.html">
-                    <i class="fa fa-hashtag fa-1x me-2 p-2 text-white" style="-webkit-text-stroke: 1px white;"></i>
-                    <span class="d-none d-xl-block fw-bold">Explore</span>
+                <a class="nav-link active mb-2 text-white d-inline-flex flex-row align-items-center" href="explore.html">
+                    <i class="fa fa-hashtag fa-1x me-2 p-2 text-white"></i>
+                    <span class="d-none d-xl-block">Explore</span>
                 </a>
                 <a class="nav-link mb-2 text-white d-inline-flex flex-row align-items-center" href="../notifications.html">
                     <i class="fa fa-bell fa-1x me-2 p-2 text-white"></i>
@@ -33,7 +33,7 @@ const NavigationSidebar = () => {
                     <span class="d-none d-xl-block">Profile</span>
                 </a>
                 <a class="nav-link mb-2 text-white d-inline-flex flex-row align-items-center ps-lg-2" href="../more.html">
-                    <span class="fa-stack">
+                    <span class="fa-stack me-2">
                         <i class="fas fa-circle fa-stack-1x ms-md-0 text-white" width="100%" style="font-size:25px"></i>
                         <i class="fas fa-ellipsis-h fa-stack-1x" style="color: black"></i>
                     </span>

@@ -12,7 +12,7 @@ const ExploreComponent = () => {
                             </span>
                             <span class="wd-float-right wd-gear-emoji justify-content-center">
                                 <a class="wd-anchor-underline" href="explore-settings.html">
-                                    <i class="fa fa-cog" style="color: white"></i>
+                                    <i class="fa fa-cog" style="color: rgb(29, 161, 242)"></i>
                                 </a>
                             </span>
                         </div>

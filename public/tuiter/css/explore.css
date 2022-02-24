@@ -2,7 +2,7 @@
 .wd-search-field {
     width: calc(100% - 40px);
     font-weight: bold;
-    margin-left: 25px;
+    margin-left: 20px;
     height: 30px;
     padding-left: 35px;
     padding-right: 35px;
@@ -32,7 +32,7 @@
 
 .wd-gear-emoji {
     padding-right: 20px;
-    color: white;
+    color: rgb(29, 161, 242);
     font-size: 30px;
     text-decoration-line: none;
 }
@@ -80,6 +80,10 @@
     border-bottom: 3px solid rgb(29, 161, 242);
 }
 
+.nav-pills .nav-link.active {
+    background-color: rgb(29, 161, 242);
+    border-color: rgb(29, 161, 242);
+}
 .wd-white-space {
     white-space: nowrap;
 }
@@ -103,7 +107,7 @@
 
 .wd-search-box i {
     position: absolute;
-    left: 35px;
+    left: 43px;
     top: 7px;
     color: rgb(110, 118, 125);
 }
