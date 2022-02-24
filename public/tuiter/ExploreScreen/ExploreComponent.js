@@ -20,26 +20,25 @@ const ExploreComponent = () => {
                 </div>
                 <ul class="nav nav-tabs text-dark nav-fill" style="border-bottom-color: black">
                     <li class="nav-item">
-                        <a class="nav-link active bg-black text-white fw-bold wd-font" href="for-you.html">For you</a>
+                        <a class="nav-link active bg-black text-white fw-bold wd-font" href="../for-you.html">For you</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link wd-gray wd-font" href="trending.html">Trending</a>
+                        <a class="nav-link wd-gray wd-font" href="../trending.html">Trending</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link wd-gray wd-font" href="covid-19.html">COVID-19</a>
+                        <a class="nav-link wd-gray wd-font" href="../covid-19.html">COVID-19</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link wd-gray wd-font" href="news.html">News</a>
+                        <a class="nav-link wd-gray wd-font" href="../news.html">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link wd-gray wd-font d-none d-md-block" href="sports.html">Sports</a>
+                        <a class="nav-link wd-gray wd-font d-none d-md-block" href="../sports.html">Sports</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link wd-gray d-none d-lg-block" href="entertainment.html">Entertainment</a>
+                        <a class="nav-link wd-gray d-none d-lg-block" href="../entertainment.html">Entertainment</a>
                     </li>
                 </ul>
             </div>
-           <!-- image with overlaid text -->
            <div class="container position-relative ps-0 pe-0">
                 <img width="100%" heigh="500px" src="../images/SpaceX_Starship.jpg">
                 <div class="wd-bottom-left text-white">SpaceX's Starship</div>
