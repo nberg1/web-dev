@@ -1,6 +1,6 @@
 const PostItem = (post) => {
     return(`
-        <div class="d-flex flex-row overflow-hidden wd-border-style wd-font wd-font-13">
+        <div class="d-flex flex-row overflow-hidden border-bottom border-light wd-font wd-font-13">
             <div class="float-start ms-3 mt-3">
                 <img class="rounded-circle" width="48px" height="48px" src=${post.UserImage}>
             </div>
@@ -9,14 +9,16 @@ const PostItem = (post) => {
                 <img class="wd-tuit-emoji" src="../images/Twitter_Verified_Badge.svg.png">
                 <span>@${post.userName} · ${post.time}</span>
                 <div class="wd-font-color-white" style="max-width: 506px">${post.title}</div>
-                <div class="mt-2 border-light border-1">
-                    <img class="wd-article-image wd-border-style rounded-3 pe-4" style="max-width: 100%; background-size: cover" height="264px" src=${post.ArticleImage}>
+                <div class="mt-2 border-1">
+                    <div class="wd-border-style rounded-3 overflow-hidden" style="margin-right: 48px">
+                        <img class="wd-article-image border-light" width="504px" style="max-width: 100%; height: 100%" height="264px" src=${post.ArticleImage}/>
                         <div class="p-2">
                             <div class="wd-font-color-white" style="max-width: 506px">${post.ArticleTitle ? post.ArticleTitle : ''}</div>
                             <div style="max-width: 506px">${post.ArticleSummary ? post.ArticleSummary : ''}</div>
                             <div>${post.ArticleUrl ? post.ArticleUrl : ''}</div>
                         </div>
-                    <div class="d-flex justify-content-between overflow-visible mt-3 pb-3 pe-4" width="504px">
+                    </div>
+                    <div class="d-flex justify-content-between overflow-visible mt-3 pb-3 pe-4 me-4">
                         <div>
                             <a href="#" class="wd-nav-tabs-no-underline wd-font-color-gray">
                                 <div>
