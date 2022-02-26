@@ -20,7 +20,7 @@ const NavigationSidebar = (active) => {
                     <i class="fa fa-envelope fa-1x me-2 p-2 text-white"></i>
                     <span class="d-none d-xl-block">Messages</span>
                 </a>
-                <a id="bookmakrs" class="nav-link ${active == 'bookmarks' ? 'active' : ''} mb-2 text-white d-inline-flex flex-row align-items-center" href="../bookmarks.html">
+                <a id="bookmakrs" class="nav-link ${active == 'bookmarks' ? 'active' : ''} mb-2 text-white d-inline-flex flex-row align-items-center" href="../BookmarksScreen/index.html">
                     <i class="fa fa-bookmark fa-1x me-2 p-2 text-white"></i>
                     <span class="d-none d-xl-block">Bookmarks</span>
                 </a>
