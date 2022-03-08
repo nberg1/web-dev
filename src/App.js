@@ -14,7 +14,7 @@ function App() {                      // can also use const App = () => {
                   <Route path="/hello"
                          exact={true}
                          element={<HelloWorld/>}/>
-                  <Route path="/labs"
+                  <Route path="/"
                          exact={true}
                          element={<Labs/>}/>
                   <Route path="/tuiter"
