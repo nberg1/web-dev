@@ -1,4 +1,9 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import HomeScreen from "../HomeScreen";
+import "../Styles/explore.css"
+import "../Styles/index.css"
+
 
 const NavigationSidebar = (
     {active = 'explore'
@@ -10,8 +15,7 @@ const NavigationSidebar = (
                     <i className="fab fa-twitter me-1 p-2 text-white"></i>
                 </a>
                 <a id="home"
-                   className={"nav-link ${active == 'home' ? 'active' : ''} mb-2 text-white d-inline-flex flex-row align-items-center"}
-                   href="../HomeScreen/index.html">
+                   className={"nav-link ${active == 'home' ? 'active' : ''} mb-2 text-white d-inline-flex flex-row align-items-center"}>
                     <i className="fa fa-home fa-1x me-1 p-2 text-white"></i>
                     <span className="d-none d-xl-block">Home</span>
                 </a>
@@ -51,17 +55,15 @@ const NavigationSidebar = (
                     <i className="fa fa-user fa-1x me-2 p-2 text-white"></i>
                     <span className="d-none d-xl-block">Profile</span>
                 </a>
-                {/*TODO: NOT WORKING*/}
-                {/*<a id="more"*/}
-                {/*   className={"nav-link ${active == 'more' ? 'active' : ''} mb-2 text-white d-inline-flex flex-row align-items-center ps-lg-2"}*/}
-                {/*   href="../more.html">*/}
-                {/*    <span className="fa-stack me-2">*/}
-                {/*        <i className="fas fa-circle fa-stack-1x ms-md-0 text-white" width="100%"*/}
-                {/*           style="font-size:25px"></i>*/}
-                {/*        <i className="fas fa-ellipsis-h fa-stack-1x" style="color: black"></i>*/}
-                {/*    </span>*/}
-                {/*    <span className="d-none d-xl-block">More</span>*/}
-                {/*</a>*/}
+                <a id="more"
+                   className={"nav-link ${active == 'more' ? 'active' : ''} mb-2 text-white d-inline-flex flex-row align-items-center ps-lg-2"}
+                   href="../more.html">
+                    <span className="fa-stack me-2">
+                        <i className="fas fa-circle fa-stack-1x ms-md-0 text-white" width="100%" style={{fontSize: "25px"}}/>
+                        <i className="fas fa-ellipsis-h fa-stack-1x" style={{color: "black"}}/>
+                    </span>
+                    <span className="d-none d-xl-block">More</span>
+                </a>
                 <button type="button"
                         className="wd-tuit-button rounded-pill btn-primary btn-block text-white p-2">Tuit
                 </button>

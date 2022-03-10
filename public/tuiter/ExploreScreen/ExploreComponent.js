@@ -1,8 +1,8 @@
 import PostSummaryList from "../PostSummaryList/PostSummaryList.js";
 const ExploreComponent = () => {
     return(`
-        <div class=" container-fluid border-1 p-0">
-            <div class="wd-overflow-hidden wd-border-style">
+        <div class=" container-fluid border-1">
+            <div class="wd-overflow-hidden">
                 <div>
                     <form>
                         <div class="mt-2 wd-overflow-hidden align-items-center d-flex">
