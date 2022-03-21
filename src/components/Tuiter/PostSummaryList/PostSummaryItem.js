@@ -8,7 +8,7 @@ const PostSummaryItem = ({
          userName: "ReactJS",
          time: "2h",
          title: "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-         image: "images/ReactJS.png"
+         image: "/images/ReactJS.png"
      }
     }) => {
     return(
@@ -16,7 +16,7 @@ const PostSummaryItem = ({
                 <div className="float-start">
                     <div>{post.topic}</div>
                     <span className="text-white fw-bold me-1">{post.userName}</span>
-                    <img className="wd-tuit-emoji" width="18px" height="18px"  src="images/Twitter_Verified_Badge.svg.png"/>
+                    <img className="wd-tuit-emoji" width="18px" height="18px"  src="/images/Twitter_Verified_Badge.svg.png"/>
                         <span> - {post.time}</span>
                         <div className="text-white fw-bold">{post.title}</div>
                         <div>{post.tweets ? post.tweets : ''} Tuits</div>

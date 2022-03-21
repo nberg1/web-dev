@@ -7,7 +7,7 @@ const WhoToFollowListItem = (who) => {
             <div class="overflow-visible">
                 <div class="position-absolute">
                 <span class="text-white wd-white-space">${who.userName}
-                    <img class="wd-tuit-emoji" src="../images/Twitter_Verified_Badge.svg.png">
+                    <img class="wd-tuit-emoji" src="../../images/Twitter_Verified_Badge.svg.png">
                 </span></br>
                     <span class="wd-font-color-gray">@${who.handle}</span>
                 </div>

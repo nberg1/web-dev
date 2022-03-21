@@ -6,7 +6,7 @@ const PostItem = (post) => {
             </div>
             <div class="float-end mt-3 ms-3 wd-font-15 wd-font-color-gray me-3">
                 <span class="wd-font-color-white">${post.User}</span>
-                <img class="wd-tuit-emoji" src="../images/Twitter_Verified_Badge.svg.png">
+                <img class="wd-tuit-emoji" src="../../images/Twitter_Verified_Badge.svg.png">
                 <span>@${post.userName} · ${post.time}</span>
                 <div class="wd-font-color-white" style="max-width: 506px">${post.title}</div>
                 <div class="mt-2 border-1">

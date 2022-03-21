@@ -4,7 +4,7 @@ const PostSummaryItem = (post) => {
             <div class="float-start">
                 <div>${post.topic}</div>
                 <span class="text-white fw-bold">${post.userName}</span>
-                <img class="wd-tuit-emoji" src="../images/Twitter_Verified_Badge.svg.png">
+                <img class="wd-tuit-emoji" src="../../images/Twitter_Verified_Badge.svg.png">
                 <span> - ${post.time}</span>
                 <div class="text-white fw-bold">${post.title}</div>
                 <div>${post.tweets ? post.tweets : ''}</div>
