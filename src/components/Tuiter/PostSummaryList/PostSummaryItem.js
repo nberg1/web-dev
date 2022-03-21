@@ -13,7 +13,7 @@ const PostSummaryItem = ({
     }) => {
     return(
         <div>
-            <div className="overflow-hidden d-flex wd-font-color-gray pt-3 pb-3">
+            <div className="overflow-hidden d-flex wd-font-color-gray pt-3 pb-3 ps-3 pe-3 wd-who-to-follow-bg">
                 <div className="float-start">
                     <div>{posts.topic}</div>
                     <span className="text-white fw-bold me-1">{posts.userName}</span>

@@ -8,8 +8,8 @@ const ExploreComponent = () => {
         <>
             <div className="container-fluid border-1 p-0">
                 <div className="wd-overflow-hidden wd-border-style">
-                    <div style={{marginTop: "5px"}}>
-                        <i className="fa fa-search" style={{position: "absolute", top: "13px", left: "43px"}}></i>
+                    <div style={{marginTop: "5px", position: "relative"}}>
+                        <i className="fa fa-search" style={{position: "absolute", top: "7px", left: "32px"}}></i>
                         <input type="text" className="wd-search-field wd-rounded-edges wd-font"
                                placeholder="Search Tuiter"
                                style={{backgroundColor: "white",

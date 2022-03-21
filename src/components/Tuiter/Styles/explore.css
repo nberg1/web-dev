@@ -126,5 +126,10 @@
 }
 
 .wd-who-to-follow-bg {
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(28, 28, 28);
+}
+
+.wd-post-summary-border {
+    border-style: solid;
+    border-color: rgb(45, 45, 45);
 }

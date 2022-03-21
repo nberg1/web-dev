@@ -1,10 +1,10 @@
 import React from "react";
-import ExploreScreen from "./ExploreScreen";
+import HomeScreen from "./HomeScreen";
 
 const Tuiter = () => {
     return(
         <>
-            <ExploreScreen/>
+            <HomeScreen/>
         </>
     )
 };

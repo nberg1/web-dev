@@ -15,14 +15,14 @@ const NavigationSidebar = (
                 <a id="home"
                    className={"nav-link ${active == 'home' ? 'active' : ''} mb-2 text-white d-inline-flex flex-row align-items-center"}>
                     <i className="fa fa-home fa-1x me-1 p-2 text-white"></i>
-                    <Link className= "text-white text-decoration-none" to="/Tuiter/HomeScreen">
+                    <Link className= "text-white text-decoration-none" to="/Tuiter/home">
                         <span className="d-none d-xl-block">Home</span>
                     </Link>
                 </a>
                 <a id="explore"
                    className={"nav-link ${active == 'explore' ? 'active' : ''} mb-2 text-white d-inline-flex flex-row align-items-center"}>
                     <i className="fa fa-hashtag fa-1x me-2 p-2 text-white"></i>
-                    <Link className= "text-white text-decoration-none" to="/Tuiter/ExploreScreen">
+                    <Link className= "text-white text-decoration-none" to="/Tuiter/explore">
                         <span className="d-none d-xl-block">Explore</span>
                     </Link>
                 </a>

@@ -12,7 +12,7 @@ const Labs = () => {
             <Link to="/hello">
                 Hello
             </Link> |
-            <Link to="/Tuiter">
+            <Link to="/Tuiter/home">
                 Tuiter
             </Link>
             <TodoList/>
