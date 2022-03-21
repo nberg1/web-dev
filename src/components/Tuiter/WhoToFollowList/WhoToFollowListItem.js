@@ -2,7 +2,7 @@ import "../Styles/index.css"
 
 const WhoToFollowListItem = ({
                       who = {
-                          avatarIcon: 'images/nasa.png',
+                          avatarIcon: '/images/nasa.png',
                           userName: 'NASA',
                           handle: 'NASA'
                       }
