@@ -8,7 +8,7 @@ const WhoToFollowListItem = ({
                       }
                   }) => {
     return(
-        <div class="d-flex flex-row mt-4 wd-who-to-follow-bg">
+        <div className="d-flex flex-row mt-4 wd-who-to-follow-bg">
             <div>
                 <img className="rounded-circle me-xxl-3 me-xl-2 me-lg-0" width="48px" height="48px" src={who.avatarIcon}/>
             </div>

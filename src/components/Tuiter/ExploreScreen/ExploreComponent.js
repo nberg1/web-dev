@@ -8,16 +8,20 @@ const ExploreComponent = () => {
         <>
             <div className="container-fluid border-1 p-0">
                 <div className="wd-overflow-hidden wd-border-style">
-                    <i className="fa fa-search"></i>
-                    <input type="text" className="wd-search-field wd-rounded-edges wd-font"
-                           placeholder="Search Tuiter"
-                           style={{backgroundColor: "#2c2b2b",
-                        padding: "10px",
-                        width: "calc(100% - 40px)",
-                        marginBottom: "10px",
-                        borderColor: "black",
-                        borderRadius: "50px",
-                        color: "rgb(110, 118, 125)"}}/>
+                    <div style={{marginTop: "5px"}}>
+                        <i className="fa fa-search" style={{position: "absolute", top: "13px", left: "43px"}}></i>
+                        <input type="text" className="wd-search-field wd-rounded-edges wd-font"
+                               placeholder="Search Tuiter"
+                               style={{backgroundColor: "white",
+                                   width: "calc(100% - 80px)",
+                                   marginBottom: "10px",
+                                   borderColor: "black",
+                                   borderRadius: "50px",
+                                   color: "rgb(110, 118, 125)"}}/>
+                            <a className="wd-anchor-underline" href="explore-settings.html">
+                                <i className="fa fa-cog" style={{fontSize: "26px", paddingLeft: "12px", paddingTop: "4px", position: "absolute", color: "rgb(29, 161, 242)"}}></i>
+                            </a>
+                    </div>
                     <ul className="nav nav-tabs text-dark nav-fill">
                         <li className="nav-item">
                             <a className="nav-link active bg-black text-white fw-bold wd-font" href="#">For
