@@ -200,4 +200,12 @@ body {
     text-decoration-line: none;
 }
 
+.nav-link > a:active {
+    font-weight: bold;
+    color: rgb(29, 161, 242);
+}
+
+nav-link active {
+    background-color: rgb(29, 161, 242)
+}
 

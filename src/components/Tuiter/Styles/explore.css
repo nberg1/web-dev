@@ -71,6 +71,16 @@
     align-items: stretch;
 }
 
+.nav-pills .nav-link.active {
+    background-color: rgb(29, 161, 242);
+    border-color: rgb(29, 161, 242);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: rgb(29, 161, 242);
+    border-color: rgb(29, 161, 242);
+}
+
 .nav-tabs .nav-link.active, .nav-tabs .nav-item:hover .nav-link {
     color: white!important;
     font-weight: bold;
@@ -80,10 +90,7 @@
     border-bottom: 3px solid rgb(29, 161, 242);
 }
 
-.nav-pills .nav-link.active {
-    background-color: rgb(29, 161, 242);
-    border-color: rgb(29, 161, 242);
-}
+
 .wd-white-space {
     white-space: nowrap;
 }
