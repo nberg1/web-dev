@@ -8,26 +8,26 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import HomeScreen from "./components/Tuiter/HomeScreen";
 import ExploreScreen from "./components/Tuiter/ExploreScreen";
 
-function App() {                      // can also use const App = () => {
+function App() {
   return (
       <BrowserRouter>
           <div className="container">
               <Routes>
-                  <Route path="/hello"
-                         exact={true}
-                         element={<HelloWorld/>}/>
-                  <Route path="/"
-                         exact={true}
+                  <Route path="/">
+                      <Route path="labs"
                          element={<Labs/>}/>
-                  <Route path="/Tuiter"
-                         exact={true}
-                         element={<Tuiter/>}/>
-                  <Route path="/Tuiter/home"
-                         exact={true}
-                         element={<HomeScreen/>}/>
-                  <Route path="/Tuiter/explore"
-                         exact={true}
-                         element={<ExploreScreen/>}/>
+                      <Route path="hello"
+                             element={<HelloWorld/>}/>
+                      <Route path="Tuiter"
+                             element={<Tuiter/>}>
+                          <Route index
+                                 element={<HomeScreen/>}/>
+                          <Route path="explore"
+                                 element={<ExploreScreen/>}/>
+                          {/*<Route path="notifications"*/}
+                          {/*       element={<NotificationScreen/>}/>*/}
+                      </Route>
+                  </Route>
               </Routes>
           </div>
       </BrowserRouter>
