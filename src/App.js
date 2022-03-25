@@ -20,7 +20,7 @@ function App() {
                              element={<HelloWorld/>}/>
                       <Route path="Tuiter"
                              element={<Tuiter/>}>
-                          <Route index path="home"
+                          <Route index
                                  element={<HomeScreen/>}/>
                           <Route path="explore"
                                  element={<ExploreScreen/>}/>
