@@ -1,10 +1,13 @@
 import React from "react";
-import postContent from "./postContent.json";
+import {useSelector} from "react-redux";
 import PostItem from "./PostItem";
 import "../Styles/explore.css"
 import "../Styles/index.css"
 
 const PostList = () => {
+    const postContent = useSelector(
+        state => state.postContent);
+
     return(
         <div>
             <div className="container wd-border-style border-bottom-0 ps-0 pe-0">
