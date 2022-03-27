@@ -13,21 +13,20 @@ function App() {                      // can also use const App = () => {
       <BrowserRouter>
           <div className="container">
               <Routes>
-                  <Route path="/hello"
-                         exact={true}
-                         element={<HelloWorld/>}/>
-                  <Route path="/"
-                         exact={true}
+                  <Route path="/">
+                      <Route path ="labs"
                          element={<Labs/>}/>
-                  <Route path="/Tuiter"
-                         exact={true}
-                         element={<Tuiter/>}/>
-                  <Route path="/Tuiter/home"
-                         exact={true}
-                         element={<HomeScreen/>}/>
-                  <Route path="/Tuiter/explore"
-                         exact={true}
-                         element={<ExploreScreen/>}/>
+                      <Route path="hello"
+                             element={<HelloWorld/>}/>
+                      <Route path="tuiter"
+                             element={<Tuiter/>}>
+                          <Route index
+                                 element={<HomeScreen/>}/>
+                          <Route path="explore"
+                                 exact={true}
+                                 element={<ExploreScreen/>}/>
+                      </Route>
+                  </Route>
               </Routes>
           </div>
       </BrowserRouter>
