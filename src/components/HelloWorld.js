@@ -12,7 +12,6 @@ const HelloWorld = () => {
                 Tuiter
             </Link>
         </>
-
     )
 };
 

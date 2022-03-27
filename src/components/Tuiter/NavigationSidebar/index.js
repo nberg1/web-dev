@@ -49,11 +49,11 @@ const NavigationSidebar = (
                     </Link>
                 </a>
                 <a id="lists"
-                   className={`nav-link mb-2 text-white d-inline-flex flex-row align-items-center ${active === 'lists' ? 'active' : ''}`}
-                   href="../lists.html">
+                   className={`nav-link mb-2 text-white d-inline-flex flex-row align-items-center ${active === 'lists' ? 'active' : ''}`}>
                     <i className="fa fa-list fa-1x me-2 p-2 text-white"></i>
-                    <span className="d-none d-xl-block">Lists</span>
-                </a>
+                    <Link className= "text-white text-decoration-none" to="/Tuiter/Lists">
+                        <span className="d-none d-xl-block">Lists</span>
+                    </Link>                </a>
                 <a id="profile"
                    className={`nav-link mb-2 text-white d-inline-flex flex-row align-items-center ${active === 'profile' ? 'active' : ''}`}>
                     <i className="fa fa-user fa-1x me-2 p-2 text-white"></i>
