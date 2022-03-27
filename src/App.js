@@ -23,7 +23,6 @@ function App() {                      // can also use const App = () => {
                           <Route index
                                  element={<HomeScreen/>}/>
                           <Route path="explore"
-                                 exact={true}
                                  element={<ExploreScreen/>}/>
                       </Route>
                   </Route>
