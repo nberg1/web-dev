@@ -6,6 +6,13 @@ const Todos = () => {
         = useSelector(state => state.todos);
     const [todo, setTodo] = useState({do: ''});
     const dispatch = useDispatch();
+    const deleteTodoClickHandler = (todo) => {
+        const action = {
+            type: 'delete-todo',
+            todo
+        };
+        dispatch(action);
+    }
     const createTodoClickHandler = () => {
         const action = {
             type: 'create-todo',
@@ -38,6 +45,11 @@ const Todos = () => {
                     todos.map(todo =>
                         <li className="list-group-item">
                             {todo.do}
+                            <button onClick={() =>
+                                deleteTodoClickHandler(todo)}
+                                    className="btn btn-danger float-end">
+                                Delete
+                            </button>
                         </li>
                     )
                 }

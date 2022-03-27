@@ -18,6 +18,10 @@ const todosReducer = (state = data, action) => {
                 ...state,
                 action.todo
             ]
+        case 'delete-todo':
+            return state
+                .filter(todo =>
+                todo !== action.todo);
         default:
             return state;
     }
