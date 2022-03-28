@@ -1,13 +1,29 @@
 import React, {useState} from "react";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 const WhatsHappening = () => {
-    let [whatsHappening, setWhatsHappening]
-        = useState('');
+    let [whatsHappening, setWhatsHappening] = useState({do: ''});
+    const happeningChangeHandler = (event) => {
+        const tuitValue = event.target.value;
+        const newTuit = {
+            _id: "456",
+            User: "WebDev",
+            userName: "webdev",
+            time: "23h",
+            UserImage: "/images/nicole_berg_image.jpg",
+            title: tuitValue,
+            do: tuitValue,
+            Reply: "111",
+            ReTuit: "222",
+            verified: false,
+            Like: "333"
+        }
+        setWhatsHappening(newTuit);
+    }
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
         dispatch({type: 'create-tuit',
-            postContent: whatsHappening});
+            whatsHappening});
     }
     return (
         <div>
@@ -24,10 +40,9 @@ const WhatsHappening = () => {
                         outline: "none",
                         flexGrow: "1",
                         width: "400px"}}
-                           value={whatsHappening}
+                           value={whatsHappening.do}
                            placeholder="What's Happening?"
-                           onChange={(event) =>
-                               setWhatsHappening(event.target.value)}>
+                           onChange={happeningChangeHandler}>
                     </input>
                     <div className="mt-3 wd-border-bottom"></div>
                 </div>

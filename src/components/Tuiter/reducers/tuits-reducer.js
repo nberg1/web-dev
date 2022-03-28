@@ -21,22 +21,22 @@ const tuitsReducer = (state = postContent, action) => {
         case 'delete-tuit':
             return state.filter(postContent => postContent._id !== action.postContent._id);
         case 'create-tuit':
-            const newTuit = {
-                _id: "456",
-                postContent: action.postContent,
-                User: "WebDev",
-                userName: "webdev",
-                time: "23h",
-                UserImage: "/images/nicole_berg_image.jpg",
-                title: "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...",
-                Reply: "111",
-                ReTuit: "222",
-                verified: false,
-                Like: "333"
-            }
+            // const newTuit = {
+            //     _id: "456",
+            //     postContent: action.postContent,
+            //     User: "WebDev",
+            //     userName: "webdev",
+            //     time: "23h",
+            //     UserImage: "/images/nicole_berg_image.jpg",
+            //     title: "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...",
+            //     Reply: "111",
+            //     ReTuit: "222",
+            //     verified: false,
+            //     Like: "333"
+            // }
             return [
-                newTuit,
-                ...state,
+                action.whatsHappening,
+                ...state
             ];
         default:
             return postContent;

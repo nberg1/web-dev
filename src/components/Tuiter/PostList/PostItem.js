@@ -14,13 +14,7 @@ const PostItem = ({postContent}) => {
                <div className="float-start ms-3 mt-3">
                    <img className="rounded-circle" width="48px" height="48px" src={postContent.UserImage}/>
                </div>
-               <div className="float-end mt-3 ms-3 wd-font-15 wd-font-color-gray me-3">
-                   <div className="float-end justify-content-end">
-                       {/*TODO*/}
-                       <i onClick={() =>
-                           deleteTuit(postContent)}
-                          className="fa fa-times fa-1x me-2 p-2 wd-font-color-gray"></i>
-                   </div>
+               <div className="float-end mt-3 ms-3 wd-font-15 wd-font-color-gray me-3" style={{width: "506px", maxWidth: "1005%"}}>
                    <span className="wd-font-color-white">{postContent.User}</span>
                    <img className="wd-tuit-emoji" style={{visibility: postContent.verified ? 'visible' : 'hidden'}} src="/images/Twitter_Verified_Badge.svg.png"/>
                    <span>@{postContent.userName} · {postContent.time}</span>
@@ -44,7 +38,7 @@ const PostItem = ({postContent}) => {
                                <div>{postContent.ArticleUrl ? postContent.ArticleUrl : ''}</div>
                            </div>
                        </div>
-                       <div className="d-flex justify-content-between overflow-visible mt-3 pb-3 pe-4 me-4">
+                       <div className="d-flex justify-content-between overflow-visible mt-3 pb-3 pe-4 me-4" style={{maxWidth: "506px"}}>
                            <div>
                                <a href="#" className="wd-nav-tabs-no-underline wd-font-color-gray">
                                    <div>
@@ -53,7 +47,7 @@ const PostItem = ({postContent}) => {
                                    </div>
                                </a>
                            </div>
-                           <div style={{maxWidth: "506px"}}>
+                           <div>
                                <a href="#" className="wd-nav-tabs-no-underline wd-font-color-gray">
                                    <div className="wd-retuit-icon-hover">
                                        <i className="fas fa-retweet me-2"></i>
@@ -78,6 +72,11 @@ const PostItem = ({postContent}) => {
                            </div>
                        </div>
                    </div>
+               </div>
+               <div className="float-end align-items-end">
+                   <i onClick={() =>
+                       deleteTuit(postContent)}
+                      className="fa fa-times fa-1x me-2 p-2 wd-font-color-gray"></i>
                </div>
            </div>
         </>
