@@ -32,19 +32,19 @@ const WhatsHappening = () => {
                     <img className="rounded-circle" width="48px" height="48px" src="/images/nicole_berg_image.jpg"/>
                 </div>
                 <div className="float-end mt-3 ms-3 me-0 wd-font-color-gray me-3">
-                    <input className="wd-font mb-3 wd-border-bottom" style={{
+                    <textarea className="wd-font mb-3 wd-border-bottom" wrap="hard" style={{
                         backgroundColor: "black",
                         color: "white",
                         borderColor: "black",
                         fontSize: "20px",
                         outline: "none",
                         flexGrow: "1",
-                        width: "400px"}}
+                        width: "450px", maxWidth: "100%"}}
                            value={whatsHappening.do}
                            placeholder="What's Happening?"
                            onChange={happeningChangeHandler}>
-                    </input>
-                    <div className="mt-3 wd-border-bottom"></div>
+                    </textarea>
+                    <div className="mt-3 wd-border-bottom" style={{width: "450px", maxWidth: "100%"}}></div>
                 </div>
             </div>
             <div className="ms-5 mb-4 pb-2">

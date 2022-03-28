@@ -14,7 +14,7 @@ const PostItem = ({postContent}) => {
                <div className="float-start ms-3 mt-3">
                    <img className="rounded-circle" width="48px" height="48px" src={postContent.UserImage}/>
                </div>
-               <div className="float-end mt-3 ms-3 wd-font-15 wd-font-color-gray me-3" style={{width: "506px", maxWidth: "1005%"}}>
+               <div className="float-end mt-3 ms-3 wd-font-15 wd-font-color-gray me-3" style={{width: "506px", maxWidth: "100%"}}>
                    <span className="wd-font-color-white">{postContent.User}</span>
                    <img className="wd-tuit-emoji" style={{visibility: postContent.verified ? 'visible' : 'hidden'}} src="/images/Twitter_Verified_Badge.svg.png"/>
                    <span>@{postContent.userName} · {postContent.time}</span>
