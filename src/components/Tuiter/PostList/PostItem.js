@@ -22,7 +22,7 @@ const PostItem = ({postContent}) => {
                </div>
                <div className="float-end mt-3 ms-3 wd-font-15 wd-font-color-gray me-3">
                    <span className="wd-font-color-white">{postContent.User}</span>
-                   <img className="wd-tuit-emoji" src="/images/Twitter_Verified_Badge.svg.png"/>
+                   <img className="wd-tuit-emoji" style={{visibility: postContent.verified ? 'visible' : 'hidden'}} src="/images/Twitter_Verified_Badge.svg.png"/>
                    <span>@{postContent.userName} · {postContent.time}</span>
                    <div className="wd-font-color-white" style={{maxWidth: "506px"}}>{postContent.title}</div>
                    <div className="mt-2 border-1">
