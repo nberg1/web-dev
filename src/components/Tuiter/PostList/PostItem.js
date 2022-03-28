@@ -31,8 +31,18 @@ const PostItem = (
                    <span>@{postContent.userName} · {postContent.time}</span>
                    <div className="wd-font-color-white" style={{maxWidth: "506px"}}>{postContent.title}</div>
                    <div className="mt-2 border-1">
-                       <div className="wd-border-style rounded-3 overflow-hidden" style={{marginRight: "48px"}}>
-                           <img className="wd-article-image" width="504px" height="264px" style={{maxWidth: "100%", height: "100%"}} src={postContent.ArticleImage}/>
+                       <div className="wd-border-style rounded-3 overflow-hidden" style={{
+                           visibility: !postContent.ArticleImage
+                               && !postContent.ArticleSummary
+                               && !postContent.ArticleTitle
+                               && !postContent.ArticleUrl ? 'hidden' : 'visible',
+                           marginRight: "48px"}}>
+                           <img className="wd-article-image" height="264px" style={{
+                               width: postContent.ArticleImage ? "504px" : '0%',
+                               maxWidth: postContent.ArticleImage ? "100%" : '0%',
+                               height: "100%",
+                               visibility: postContent.ArticleImage ? 'visible' : 'hidden'}}
+                                src={postContent.ArticleImage ? postContent.ArticleImage : ''}/>
                            <div className="p-2">
                                <div className="wd-font-color-white" style={{maxWidth: "506px"}}>{postContent.ArticleTitle ? postContent.ArticleTitle : ''}</div>
                                <div style={{maxWidth: "506px"}}>{postContent.ArticleSummary ? postContent.ArticleSummary : ''}</div>
