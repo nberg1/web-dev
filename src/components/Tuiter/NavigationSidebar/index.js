@@ -56,7 +56,7 @@ const NavigationSidebar = (
                 </a>
                 <a id="profile"
                    className={`nav-link mb-2 text-white d-inline-flex flex-row align-items-center ${active === 'profile' ? 'active' : ''}`}>
-                    <Link className= "text-white text-decoration-none d-inline-flex flex-row align-items-center" to="/Tuiter/ProfileScreen">
+                    <Link className= "text-white text-decoration-none d-inline-flex flex-row align-items-center" to="/Tuiter/profile">
                         <i className="fa fa-user fa-1x me-2 p-2 text-white"></i>
                         <span className="d-none d-xl-block">Profile</span>
                     </Link>

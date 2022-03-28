@@ -201,4 +201,13 @@ body {
     text-decoration-line: none;
 }
 
+.banner {
+    position: absolute;
+    z-index: 1;
+}
+
+.profile-pic {
+    position: absolute;
+    z-index: 2;
+}
 
