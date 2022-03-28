@@ -14,13 +14,13 @@ const PostItem = ({postContent}) => {
                <div className="float-start ms-3 mt-3">
                    <img className="rounded-circle" width="48px" height="48px" src={postContent.UserImage}/>
                </div>
-               <div className="justify-content-end">
-                   {/*TODO*/}
-                   <button onClick={() =>
-                       deleteTuit(postContent)}
-                           className="fa fa-x fa-1x me-2 p-2 text-white"></button>
-               </div>
                <div className="float-end mt-3 ms-3 wd-font-15 wd-font-color-gray me-3">
+                   <div className="float-end justify-content-end">
+                       {/*TODO*/}
+                       <i onClick={() =>
+                           deleteTuit(postContent)}
+                          className="fa fa-times fa-1x me-2 p-2 wd-font-color-gray"></i>
+                   </div>
                    <span className="wd-font-color-white">{postContent.User}</span>
                    <img className="wd-tuit-emoji" style={{visibility: postContent.verified ? 'visible' : 'hidden'}} src="/images/Twitter_Verified_Badge.svg.png"/>
                    <span>@{postContent.userName} · {postContent.time}</span>
