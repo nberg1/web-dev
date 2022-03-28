@@ -4,7 +4,7 @@ import "../Styles/explore.css"
 import "../Styles/index.css"
 
 const NavigationSidebar = (
-    {active = 'explore'
+    {active = 'home'
     }) => {
     return(
         <>
@@ -15,7 +15,7 @@ const NavigationSidebar = (
                 <a id="home"
                    className={`nav-link mb-2 text-white d-inline-flex flex-row align-items-center ${active === 'home' ? 'active' : ''}`}>
                     <i className="fa fa-home fa-1x me-1 p-2 text-white"></i>
-                    <Link className= "text-white text-decoration-none" to="/Tuiter/home">
+                    <Link className= "text-white text-decoration-none" to="/Tuiter/">
                         <span className="d-none d-xl-block">Home</span>
                     </Link>
                 </a>
