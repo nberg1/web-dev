@@ -4,12 +4,12 @@
     "lastName": "Berg",
     "handle": "nberg",
     "profilePicture": "/images/nicole_berg_image.jpg",
-    "bannerPicture": "images/banner.jpg",
-    "bio": "Software Engineer.",
+    "bannerPicture": "/images/banner.jpg",
+    "bio": "Full time student pursuing a Master's degree in Computer Science.",
     "location": "Boston, MA",
     "dateOfBirth": "05/28/1993",
     "dateJoined": "03/2019",
     "followingCount": 312,
-    "followersCount": 180
+    "followersCount": 120
   }
 ]
