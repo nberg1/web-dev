@@ -1,19 +1,22 @@
 import React from "react";
-import postContent from "./postContent.json";
 import PostItem from "./PostItem";
 import "../Styles/explore.css"
 import "../Styles/index.css"
+import {useSelector} from "react-redux";
 
 const PostList = () => {
+    const postContent = useSelector(
+        state => state.postContent);
     return(
-        <div>
             <div className="container wd-border-style border-bottom-0 ps-0 pe-0">
-                {postContent.map(postContent => {
-                    return(<PostItem postContent={postContent}/>);
-                })
-            }
+                <ul className="list-group">
+                    {
+                        postContent.map && postContent.map(postContent =>
+                        <PostItem key={postContent._id}
+                        postContent={postContent}/>)
+                    }
+                </ul>
             </div>
-        </div>
     );
 }
 export default PostList;

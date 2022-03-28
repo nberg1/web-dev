@@ -7,7 +7,7 @@ import tuitsReducer from "./reducers/tuits-reducer";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 const reducer = combineReducers({
-    posts: tuitsReducer, who: whoReducer
+    postContent: tuitsReducer, who: whoReducer
 });
 const store = createStore(reducer);
 const Tuiter = () => {
