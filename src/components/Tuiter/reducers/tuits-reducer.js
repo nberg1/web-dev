@@ -2,9 +2,11 @@ import postContent from "../data/postContent.json";
 
 const tuitsReducer = (state = postContent, action) => {
     switch (action.type) {
+        case 'delete-tuit':
+            return state.filter(postContent => postContent._id !== action.postContent._id);
         case 'create-tuit':
             const newTuit = {
-                _id: (new Date()).getTime() + '',
+                _id: "123",
                 postContent: action.postContent,
                 User: "WebDev",
                 userName: "webdev",

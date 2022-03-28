@@ -1,29 +1,24 @@
 import React from "react";
-import "../Styles/explore.css"
-import "../Styles/index.css"
+import {useDispatch} from "react-redux";
+import "../Styles/explore.css";
+import "../Styles/index.css";
 
-const PostItem = (
-    {
-      postContent = {
-          User: 'Elon Musk',
-          userName: 'elonmusk',
-          time: '23h',
-          title: 'Amazing show about @Inspiration4x mission!',
-          UserImage: '/images/elon_rocket.jpg',
-          ArticleImage: '/images/countdown_inspiration4.jfif',
-          ArticleTitle: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
-          ArticleSummary: 'From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...',
-          ArticleUrl: 'netflix.com',
-          Reply: '4.2K',
-          ReTuit: '3.5K',
-          Like: '27.5K'
-      }
-  }) => {
+const PostItem = ({postContent}) => {
+    const dispatch = useDispatch();
+    const deleteTuit = (postContent) => {
+        dispatch({type: 'delete-tuit', postContent})
+    };
     return(
         <>
            <div className="d-flex flex-row overflow-hidden wd-font wd-border-bottom wd-font-13">
                <div className="float-start ms-3 mt-3">
                    <img className="rounded-circle" width="48px" height="48px" src={postContent.UserImage}/>
+               </div>
+               <div className="justify-content-end">
+                   {/*TODO*/}
+                   <button onClick={() =>
+                       deleteTuit(postContent)}
+                           className="fa fa-x fa-1x me-2 p-2 text-white"></button>
                </div>
                <div className="float-end mt-3 ms-3 wd-font-15 wd-font-color-gray me-3">
                    <span className="wd-font-color-white">{postContent.User}</span>
