@@ -2,7 +2,6 @@ import postContent from "../data/postContent.json";
 
 const tuitsReducer = (state = postContent, action) => {
     switch (action.type) {
-        //TODO
         case 'like-tuit':
             return state.map(postContent => {
                 if(postContent._id == action.postContent._id) {

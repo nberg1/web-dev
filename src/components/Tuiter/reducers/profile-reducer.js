@@ -6,7 +6,13 @@ import ProfileScreen from "../ProfileScreen";
 const profileReducer = (state = profileData, action) => {
     switch (action.type){
         case 'save':
-            console.log("testing");
+            console.log(state);
+            console.log(profileData);
+            console.log(action);
+            // return state.map(profileData => {
+            //     // profileData.fullName = action.profileData.fullName;
+            //
+            // })
         default:
             return state;
     }

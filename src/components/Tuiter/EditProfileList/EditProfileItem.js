@@ -32,9 +32,12 @@ const EditProfileItem = ({profileData}) => {
 
     const navigate = useNavigate();
     const updateProfile = (profileData) => {
-        navigate('/Tuiter/profile');
+        profileData.fullName = fullName;
+        profileData.bio = bio;
+        profileData.location = location;
+        profileData.dateOfBirth = dob;
         dispatch({type: 'save', profileData});
-
+        navigate('/Tuiter/profile');
     };
 
     return(

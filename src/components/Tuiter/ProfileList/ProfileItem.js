@@ -10,13 +10,12 @@ const ProfileItem = ({profileData}) => {
         <>
             <div className="d-flex overflow-visible mt-3 pb-1 pe-4 me-5 pe-5 wd-font-color-gray">
                 <a className="d-flex flex-row ms-3 text-white text-decoration-none">
-                    {/*TODO: correct link to previous page*/}
                     <Link className= "text-white text-decoration-none d-inline-flex flex-row align-items-center me-5" to="/Tuiter/">
                         <i className="fa fa-arrow-left"></i>
                     </Link>
                 </a>
                 <div>
-                    <h5 className="mb-0 fw-bold">{profileData.firstName} {profileData.lastName}</h5>
+                    <h5 className="mb-0 fw-bold">{profileData.fullName}</h5>
                     <span>10 Tuits</span>
                 </div>
             </div>
@@ -38,7 +37,7 @@ const ProfileItem = ({profileData}) => {
                     </Link>
                 </div>
                 <div>
-                    <h5 className="fw-bold mb-0">{profileData.firstName} {profileData.lastName}</h5>
+                    <h5 className="fw-bold mb-0">{profileData.fullName}</h5>
                 </div>
                 <div className="wd-font-color-gray mb-3">@{profileData.handle}</div>
                 <div>{profileData.bio}</div>
