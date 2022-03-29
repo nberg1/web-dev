@@ -33,7 +33,9 @@ const ProfileItem = ({profileData}) => {
             </div>
             <div className="position-relative mt-3">
                 <div className="float-end">
-                    <button className="bg-black border-dark text-white float-end rounded-pill p-2 ps-3 pe-3">Edit profile</button>
+                    <Link className= "text-white text-decoration-none d-inline-flex flex-row align-items-center" to="/Tuiter/edit">
+                        <button className="bg-black border-dark text-white float-end rounded-pill p-2 ps-3 pe-3">Edit profile</button>
+                    </Link>
                 </div>
                 <div>
                     <h5 className="fw-bold mb-0">{profileData.firstName} {profileData.lastName}</h5>

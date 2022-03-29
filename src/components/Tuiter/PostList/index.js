@@ -8,7 +8,7 @@ const PostList = () => {
     const postContent = useSelector(
         state => state.postContent);
     return(
-            <div className="container wd-border-style border-bottom-0 ps-0 pe-0">
+            <div className="container wd-border-style border-bottom-1 ps-0 pe-0">
                 <ul className="list-group">
                     {
                         postContent.map && postContent.map(postContent =>

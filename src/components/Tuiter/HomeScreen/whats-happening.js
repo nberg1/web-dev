@@ -7,16 +7,16 @@ const WhatsHappening = () => {
         const tuitValue = event.target.value;
         const newTuit = {
             _id: "456",
-            User: "WebDev",
-            userName: "webdev",
+            User: "Nicole Berg",
+            userName: "nicole",
             time: "23h",
             UserImage: "/images/nicole_berg_image.jpg",
             title: tuitValue,
             do: tuitValue,
-            Reply: "111",
-            ReTuit: "222",
+            Reply: "1",
+            ReTuit: "2",
             verified: false,
-            Like: "333"
+            Like: "3"
         }
         setWhatsHappening(newTuit);
     }
