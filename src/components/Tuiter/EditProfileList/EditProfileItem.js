@@ -9,14 +9,28 @@ const EditProfileItem = ({profileData}) => {
     const dispatch = useDispatch();
     const profiles = useSelector(state => state.profileData);
 
-    let [fullName, setFullName] = useState({do: profileData.fullName});
+    let [fullName, setFullName] = useState(profileData.fullName);
     const NameChangeHandler = (event) => {
         const newFullName = event.target.value;
-        fullName.do.fullName = newFullName;
-        setFullName(profileData);
+        setFullName(newFullName);
+    }
+    let [bio, setBio] = useState(profileData.bio);
+    const BioChangeHandler = (event) => {
+        const newBio = event.target.value;
+        setBio(newBio);
+    }
+    let [location, setLocation] = useState(profileData.location);
+    const LocationChangeHandler = (event) => {
+        const newLocation = event.target.value;
+        setLocation(newLocation);
+    }
+    let [dob, setDob] = useState(profileData.dateOfBirth);
+    const DobChangeHandler = (event) => {
+        const newDob = event.target.value;
+        setDob(newDob);
     }
     const updateProfile = (profileData) => {
-        dispatch({type: 'update-Profile', profileData})
+        dispatch({type: 'save', profileData})
     };
     return(
         <>
@@ -51,21 +65,21 @@ const EditProfileItem = ({profileData}) => {
                     <div className="form-row">
                         <div className="form-group">
                             <label for="fullName">Name</label>
-                            <input type="text" className="form-control bg-black border-1 border-dark mb-4 text-white" id="fullName" value={profileData.fullName}/>
+                            <input type="text" className="form-control bg-black border-1 border-dark mb-4 text-white" id="fullName" value={fullName} onChange={NameChangeHandler}/>
                         </div>
                         <div className="form-group">
                             <label for="bio">Bio</label>
-                            <textarea type="text" rows="4" className="form-control input-group-lg bg-black border-1 border-dark mb-4 text-white" id="bio" value={profileData.bio}/>
+                            <textarea type="text" rows="4" className="form-control input-group-lg bg-black border-1 border-dark mb-4 text-white" id="bio" value={bio} onChange={BioChangeHandler} />
                         </div>
                     </div>
                     <div className="form-group">
                         <label for="location">Location</label>
-                        <input type="text" className="form-control bg-black border-1 border-dark mb-4 text-white" id="location" value={profileData.location}/>
+                        <input type="text" className="form-control bg-black border-1 border-dark mb-4 text-white" id="location" value={location} onChange={LocationChangeHandler}/>
                     </div>
                     <div className="form-group">
                         <label for="dob">Birthdate</label>
                         <div/>
-                        <input type="date" id="dob" value={profileData.dateOfBirth}/>
+                        <input type="date" id="dob" value={dob} onChange={DobChangeHandler}/>
                     </div>
                     <div/>
                 </form>

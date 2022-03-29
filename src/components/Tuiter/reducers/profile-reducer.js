@@ -9,7 +9,8 @@ const profileReducer = (state = profileData, action) => {
             return action.profileData;
         case 'update-Profile':
             return state.map(profileData => {
-                profileData.fullName = action.profileData.fullName;
+                // profileData.fullName = action.profileData.fullName;
+                console.log(action.profileData.fullName);
                 // if(postContent._id === action.postContent._id) {
                 //     if(postContent.liked === true) {
                 //         postContent.liked = false;
