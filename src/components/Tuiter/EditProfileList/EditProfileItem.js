@@ -3,7 +3,7 @@ import PostItem from "../PostList/PostItem";
 import "../Styles/explore.css";
 import "../Styles/index.css";
 import {useDispatch, useSelector} from "react-redux";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const EditProfileItem = ({profileData}) => {
     const dispatch = useDispatch();
@@ -29,9 +29,14 @@ const EditProfileItem = ({profileData}) => {
         const newDob = event.target.value;
         setDob(newDob);
     }
+
+    const navigate = useNavigate();
     const updateProfile = (profileData) => {
-        dispatch({type: 'save', profileData})
+        navigate('/Tuiter/profile');
+        dispatch({type: 'save', profileData});
+
     };
+
     return(
         <>
             <div className="d-flex overflow-visible mt-2 pb-1 pe-4 me-5 pe-5 wd-font-color-gray">
