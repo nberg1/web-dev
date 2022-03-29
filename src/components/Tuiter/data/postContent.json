@@ -4,7 +4,7 @@
     "User": "Elon Musk",
     "userName": "elonmusk",
     "verified": true,
-    "liked": false,
+    "liked": true,
     "time": "23h",
     "title": "Amazing show about @Inspiration4x mission!",
     "UserImage": "/images/elon_rocket.jpg",

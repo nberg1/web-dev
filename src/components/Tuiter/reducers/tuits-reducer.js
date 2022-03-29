@@ -5,13 +5,13 @@ const tuitsReducer = (state = postContent, action) => {
         //TODO
         case 'like-tuit':
             return state.map(postContent => {
-                if(postContent._id === action.postContent._id) {
+                if(postContent._id == action.postContent._id) {
                     if(postContent.liked === true) {
                         postContent.liked = false;
-                        postContent.likes--;
+                        postContent.Like--;
                     } else {
                         postContent.liked = true;
-                        postContent.likes++;
+                        postContent.Like++;
                     }
                     return postContent;
                 } else {
@@ -21,19 +21,6 @@ const tuitsReducer = (state = postContent, action) => {
         case 'delete-tuit':
             return state.filter(postContent => postContent._id !== action.postContent._id);
         case 'create-tuit':
-            // const newTuit = {
-            //     _id: "456",
-            //     postContent: action.postContent,
-            //     User: "WebDev",
-            //     userName: "webdev",
-            //     time: "23h",
-            //     UserImage: "/images/nicole_berg_image.jpg",
-            //     title: "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...",
-            //     Reply: "111",
-            //     ReTuit: "222",
-            //     verified: false,
-            //     Like: "333"
-            // }
             return [
                 action.whatsHappening,
                 ...state

@@ -1,11 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import PostItem from "../PostList/PostItem";
 import "../Styles/explore.css";
 import "../Styles/index.css";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 
 const EditProfileItem = ({profileData}) => {
+    const dispatch = useDispatch();
+    const profiles = useSelector(state => state.profileData);
+
+    let [fullName, setFullName] = useState({do: profileData.fullName});
+    const NameChangeHandler = (event) => {
+        const newFullName = event.target.value;
+        fullName.do.fullName = newFullName;
+        setFullName(profileData);
+    }
+    const updateProfile = (profileData) => {
+        dispatch({type: 'update-Profile', profileData})
+    };
     return(
         <>
             <div className="d-flex overflow-visible mt-2 pb-1 pe-4 me-5 pe-5 wd-font-color-gray">
@@ -18,7 +30,10 @@ const EditProfileItem = ({profileData}) => {
                     <h5 className="mb-0 fw-bold">Edit profile</h5>
                 </div>
                 <div className="float-end">
-                    <button className="bg-black border-dark text-white float-end rounded-pill p-2 ps-3 pe-3">Save</button>
+                    <button className="bg-black border-dark text-white float-end rounded-pill p-2 ps-3 pe-3"
+                            onClick={() =>
+                                updateProfile(profileData)}
+                    >Save</button>
                 </div>
             </div>
             <div>
@@ -50,7 +65,7 @@ const EditProfileItem = ({profileData}) => {
                     <div className="form-group">
                         <label for="dob">Birthdate</label>
                         <div/>
-                        <input type="date" cid="dob" value={profileData.dateOfBirth}/>
+                        <input type="date" id="dob" value={profileData.dateOfBirth}/>
                     </div>
                     <div/>
                 </form>

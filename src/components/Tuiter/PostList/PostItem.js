@@ -6,7 +6,10 @@ import "../Styles/index.css";
 const PostItem = ({postContent}) => {
     const dispatch = useDispatch();
     const deleteTuit = (postContent) => {
-        dispatch({type: 'delete-tuit', postContent})
+        dispatch({type: 'delete-tuit', postContent});
+    };
+    const likeTuit = () => {
+        dispatch({type: 'like-tuit', postContent});
     };
     return(
         <>
@@ -58,8 +61,10 @@ const PostItem = ({postContent}) => {
                            <div>
                                <a href="#" className="wd-nav-tabs-no-underline wd-font-color-gray">
                                    <div>
-                                       <i className="fas fa-heart me-2"/>
-                                       <span className="wd-font-13">{postContent.Like ? postContent.Like : ''}</span>
+                                       <span className="wd-font-13" onClick={likeTuit}>
+                                           {postContent.liked && <i className="fa fa-heart me-1" style={{color: 'red'}}/>}
+                                           {!postContent.liked && <i className="fa fa-heart me-1"/>}
+                                           {postContent.Like ? postContent.Like : ''}</span>
                                    </div>
                                </a>
                            </div>

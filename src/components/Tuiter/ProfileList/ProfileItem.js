@@ -2,7 +2,7 @@ import React from "react";
 import PostItem from "../PostList/PostItem";
 import "../Styles/explore.css";
 import "../Styles/index.css";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 
 const ProfileItem = ({profileData}) => {
