@@ -1,10 +1,12 @@
-import postContent from "../data/postContent.json";
+import {UPDATE_TUIT, CREATE_TUIT, FIND_ALL_TUITS, DELETE_TUIT} from "../actions/tuits-actions";
 
-const tuitsReducer = (state = postContent, action) => {
+const tuitsReducer = (state = [], action) => {
     switch (action.type) {
+        case 'FIND_ALL_TUITS':
+            return action.tuits;
         case 'like-tuit':
             return state.map(postContent => {
-                if(postContent._id == action.postContent._id) {
+                if(postContent._id === action.postContent._id) {
                     if(postContent.liked === true) {
                         postContent.liked = false;
                         postContent.Like--;
@@ -17,15 +19,28 @@ const tuitsReducer = (state = postContent, action) => {
                     return postContent;
                 }
             })
-        case 'delete-tuit':
-            return state.filter(postContent => postContent._id !== action.postContent._id);
-        case 'create-tuit':
+        case DELETE_TUIT:
+            return state.filter(
+                tuit => tuit._id !== action.tuit._id);
+
+        // case 'delete-tuit':
+        //     return state.filter(postContent => postContent._id !== action.postContent._id);
+        case CREATE_TUIT:
             return [
-                action.whatsHappening,
-                ...state
+                ...state,
+                action.newTuit
             ];
+        case UPDATE_TUIT:
+            return state.map(
+                tuit => tuit._id === action.tuit._id ?
+                    action.tuit : tuit);
+        // case 'create-tuit':
+        //     return [
+        //         action.whatsHappening,
+        //         ...state
+        //     ];
         default:
-            return postContent;
+            return state;
     }
 }
     export default tuitsReducer;

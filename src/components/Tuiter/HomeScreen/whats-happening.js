@@ -3,6 +3,8 @@ import {useDispatch, useSelector} from "react-redux";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState({do: ''});
+    const [newTuit, setNewTuit] = useState({do: 'New tuit'});
+
     const happeningChangeHandler = (event) => {
         const tuitValue = event.target.value;
         const newTuit = {
