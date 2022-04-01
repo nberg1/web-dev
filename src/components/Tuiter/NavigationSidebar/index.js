@@ -5,7 +5,7 @@ import "../Styles/index.css"
 
 const NavigationSidebar = (
 
-    {active = 'home'
+    {active = ''
     }) => {
     return(
         <>
