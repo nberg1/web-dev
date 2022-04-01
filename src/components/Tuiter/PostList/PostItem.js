@@ -87,7 +87,7 @@ const PostItem = ({postContent}) => {
                                Dislikes: {postContent.Dislike}
                                <i onClick={() => updateTuit(dispatch, {
                                    ...postContent,
-                                   Dislike: postContent.Dislike + 1
+                                   Dislike: postContent.Dislike - 1
                                })} className="far fa-thumbs-down ms-2"></i>
                            </div>
                        </div>
