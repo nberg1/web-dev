@@ -13,7 +13,7 @@ const PostItem = ({postContent}) => {
     };
     return(
         <>
-           <div className="d-flex flex-row overflow-hidden wd-font wd-border-bottom wd-font-13">
+           <div className="d-flex flex-row overflow-hidden wd-font wd-border-bottom wd-font-13 text-white">
                <div className="float-start ms-3 mt-3">
                    <img className="rounded-circle" width="48px" height="48px" src={postContent.UserImage}/>
                </div>
