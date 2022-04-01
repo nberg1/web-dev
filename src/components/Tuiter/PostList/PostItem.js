@@ -1,16 +1,17 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch} from "react-redux";
 import "../Styles/explore.css";
 import "../Styles/index.css";
+import {updateTuit, createTuit, deleteTuit, findAllTuits} from "../actions/tuits-actions";
 
 const PostItem = ({postContent}) => {
+
     const dispatch = useDispatch();
-    const deleteTuit = (postContent) => {
-        dispatch({type: 'delete-tuit', postContent});
-    };
     const likeTuit = () => {
         dispatch({type: 'like-tuit', postContent});
     };
+    useEffect(() => findAllTuits(dispatch), []);
+
     return(
         <>
            <div className="d-flex flex-row overflow-hidden wd-font wd-border-bottom wd-font-13 text-white">
@@ -75,13 +76,25 @@ const PostItem = ({postContent}) => {
                                    </div>
                                </a>
                            </div>
+                           <div>
+                               Likes: {postContent.Like}
+                               <i onClick={() => updateTuit(dispatch, {
+                                   ...postContent,
+                                   Like: postContent.Like + 1
+                               })} className="far fa-thumbs-up ms-2"></i>
+                           </div>
+                           <div>
+                               Dislikes: {postContent.Dislike}
+                               <i onClick={() => updateTuit(dispatch, {
+                                   ...postContent,
+                                   Dislike: postContent.Dislike - 1
+                               })} className="far fa-thumbs-down ms-2"></i>
+                           </div>
                        </div>
                    </div>
                </div>
                <div className="float-end align-items-end">
-                   <i onClick={() =>
-                       deleteTuit(postContent)}
-                      className="fa fa-times fa-1x me-2 p-2 wd-font-color-gray"></i>
+                   <i className="fa fa-times float-end me-2 p-2 wd-font-color-gray" onClick={() => deleteTuit(dispatch, postContent)}/>
                </div>
            </div>
         </>

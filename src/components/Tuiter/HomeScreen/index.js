@@ -7,7 +7,7 @@ import WhatsHappening from "./whats-happening";
 const HomeScreen = () => {
     return(
         <div>
-            <WhatsHappening/>
+            {/*<WhatsHappening/>*/}
             <PostList/>
         </div>
     );
