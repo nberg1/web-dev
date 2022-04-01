@@ -1,7 +1,7 @@
 import React from "react";
 import PostItem from "./PostItem";
-import "../Styles/explore.css"
-import "../Styles/index.css"
+import "../Styles/explore.css";
+import "../Styles/index.css";
 import {useSelector} from "react-redux";
 
 const PostList = () => {
