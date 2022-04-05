@@ -10,7 +10,8 @@ const PostList = () => {
         state => state.postContent);
     const dispatch = useDispatch();
     useEffect(() => findAllTuits(dispatch), []);
-    const [newTuit, setNewTuit] = useState({title: 'New tuit', Like: 0, Dislike: 0});
+    const [newTuit, setNewTuit] = useState({title: 'New tuit', Like: 0, Dislike: 0,
+        UserImage: "/images/nicole_berg_image.jpg", userName: "nicole", User: "Nicole Berg"});
 
     return(
             <div className="container wd-border-style border-bottom-1 ps-0 pe-0 text-white">
