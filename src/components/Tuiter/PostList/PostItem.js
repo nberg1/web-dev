@@ -17,6 +17,9 @@ const PostItem = ({postContent}) => {
            <div className="d-flex flex-row overflow-hidden wd-font wd-border-bottom wd-font-13">
                <div className="float-start ms-3 mt-3">
                    <img className="rounded-circle" width="48px" height="48px" src={postContent.UserImage}/>
+                   <div>
+                       TEST DIV
+                   </div>
                </div>
                <div className="float-end mt-3 ms-3 wd-font-15 wd-font-color-gray me-3" style={{width: "506px", maxWidth: "100%"}}>
                    <span className="wd-font-color-white">{postContent.User}</span>
